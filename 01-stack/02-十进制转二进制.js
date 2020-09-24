@@ -6,6 +6,7 @@ var isValid = function (num) {
         let b = num % a;
         // 将余数放到数组中
         stack.push(b);
+        // 取整作为下一轮的被除数
         var num = parseInt(num / a);
     } while (num != 0);
     let stackLength = stack.length;
